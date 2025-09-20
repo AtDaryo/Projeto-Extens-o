@@ -1,0 +1,49 @@
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-image: url('https://unifametro.edu.br/wp-content/uploads/2024/02/fonte.jpeg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    max-width: 80%;
+    height: 100vh;
+}
+.menu-login {
+    max-width: 400px;
+    margin: 80px auto;
+    padding: 32px 24px;
+    background: #fff;
+    border-radius: 30px;
+    box-shadow: 0 2px 16px rgba(0,0,0,0.08);
+    text-align: center;
+}
+.menu-login img {
+    margin-bottom: 16px;
+    border-radius: 13px;
+}
+.menu-login h1 {
+    font-size: 1.5rem;
+    margin-bottom: 12px;
+}
+.menu-login p {
+    margin-bottom: 24px;
+    color: #555;
+}
+.menu-login button {
+    display: block;
+    width: 100%;
+    margin: 8px 0;
+    padding: 12px;
+    font-size: 1rem;
+    background: #005baa;
+    color: #fff;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background 0.2s;
+}
+.menu-login button:hover {
+    background: #003f7d;
+}
