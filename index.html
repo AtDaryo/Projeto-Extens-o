@@ -1,19 +1,42 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Geolocalização Unifametro</title>
-    <link rel="stylesheet" href="css/style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Geolocalização Unifametro</title>
+  <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <div class="menu-login">
-        <img src="https://unifametro.edu.br/wp-content/uploads/2024/11/UNIFAMETRO-Share.jpg" alt="Logo Unifametro" width="150" >
-        <h1>Bem-vindo à Geolocalização Unifametro</h1>
-        <p>Escolha a entrada para ver o video da geolocalização:</p>
-        <button onclick="window.open('https://www.youtube.com/watch?v=SEU_VIDEO_1', '_blank')">Biblioteca Entrada principal</button>
-        <button onclick="window.open('https://www.youtube.com/watch?v=SEU_VIDEO_2', '_blank')">Biblioteca Entrada Setor B</button>
-        <button onclick="window.open('https://www.youtube.com/watch?v=SEU_VIDEO_3', '_blank')">Sala 215 (Setor A)</button>
+  <div class="menu-login">
+    <img src="https://unifametro.edu.br/wp-content/uploads/2024/11/UNIFAMETRO-Share.jpg" alt="Logo Unifametro" width="150">
+    <h1>Bem-vindo à Geolocalização Unifametro</h1>
+    <p>Escolha a entrada para ver o vídeo da geolocalização:</p>
+
+    <div class="search-box">
+  <input type="text" id="searchInput" placeholder="🔍 Buscar sala ou setor...">
+</div>
+
+
+
+    <div id="video-buttons">
+      <button class="video-btn" data-search="entrada principal biblioteca" data-link="https://www.youtube.com/embed/6Sq3G9qNCNY">
+        Biblioteca — Entrada principal
+      </button>
+      <button class="video-btn" data-search="setor b biblioteca" data-link="https://www.youtube.com/embed/VIDEO_2">
+        Biblioteca — Entrada Setor B
+      </button>
+      <button class="video-btn" data-search="sala 215 setor a" data-link="https://www.youtube.com/embed/VIDEO_3">
+        Sala 215 (Setor A)
+      </button>
+      <button class="video-btn" data-search="sala 314 setor a" data-link="https://www.youtube.com/embed/0W5T5BDtR94">
+        Sala 314 (Setor A)
+      </button>
     </div>
+
+    <p id="no-results">Nenhum resultado encontrado</p>
+    <div id="video-container"></div>
+  </div>
+  <script src="index.js"></script>
 </body>
 </html>
+
